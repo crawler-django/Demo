@@ -23,13 +23,14 @@ window.onload = () => {
 			}
 			
 		}
-		// dragNodes[i].ondragleave = (e) => {
-		// 	if (dragingNode != e.target) {
-		// 		if (e.target == e.target.parentNode.lastElementChild || e.target == e.target.parentNode.lastChild) {
-		// 			e.target.parentNode.appendChild(dragingNode)
-		// 		}
-		// 	}
-		// }
+		dragNodes[i].ondragleave = (e) => {
+			startX = e.x
+			// if (dragingNode != e.target) {
+			// 	if (e.target == e.target.parentNode.lastElementChild || e.target == e.target.parentNode.lastChild) {
+			// 		e.target.parentNode.appendChild(dragingNode)
+			// 	}
+			// }
+		}
 	}
 
 	document.ondragover = (e) => {
